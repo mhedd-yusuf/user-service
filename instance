@@ -1,0 +1,12 @@
+application_url = "http://18.170.28.143:8080/api/users"
+ec2_public_ip = "18.170.28.143"
+rds_address = "user-service-db.cru06u0a2s19.eu-west-2.rds.amazonaws.com"
+rds_endpoint = "user-service-db.cru06u0a2s19.eu-west-2.rds.amazonaws.com:3306"
+ssh_command = "ssh -i user-service-key.pem ec2-user@18.170.28.143"
+vpc_id = "vpc-0279980940909dcf2"
+
+
+
+scp -i user-service-key.pem /Users/mohammedyusuf/Documents/Development/source-code/user-service/target/user-service-0.0.1-SNAPSHOT.jar ec2-user@18.170.28.143:/tmp/
+
+mysql -h user-service-db.cru06u0a2s19.eu-west-2.rds.amazonaws.com -u admin -p userdb

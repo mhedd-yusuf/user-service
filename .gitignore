@@ -1,0 +1,69 @@
+# Terraform Files - IMPORTANT: Never commit secrets!
+terraform/.terraform/
+terraform/.terraform.lock.hcl
+terraform/terraform.tfstate
+terraform/terraform.tfstate.backup
+terraform/terraform.tfvars
+*.tfstate
+*.tfstate.*
+*.tfvars
+
+# Maven Build Files
+target/
+!.mvn/wrapper/maven-wrapper.jar
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+# Eclipse
+.classpath
+.project
+.settings/
+bin/
+
+# VS Code
+.vscode/
+
+# Operating System Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# SSH Keys and Certificates
+*.pem
+*.key
+*.ppk
+
+# Log Files
+*.log
+logs/
+
+# Application Properties with Secrets (if any)
+*-secret.properties
+application-local.properties
+
+# Backup Files
+*.backup
+*.bak
+
+# Temporary Files
+*.tmp
+*.swp
+*~
